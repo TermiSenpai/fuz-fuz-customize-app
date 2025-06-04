@@ -30,3 +30,11 @@ model Session {
   collaborator  Boolean?  @default(false)
   emailVerified Boolean?  @default(false)
 }
+
+model Customization {
+  id          String @id @default(cuid())
+  productType String
+  color       String
+  design      String
+}
+
